@@ -1,0 +1,11 @@
+{
+  "name": "cold-creative-auth",
+  "version": "1.0.0",
+  "description": "Sistema de autenticação premium para Cold Creative Studio",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "npx serve src"
+  },
+  "author": "Cold Creative Studio",
+  "license": "MIT"
+}

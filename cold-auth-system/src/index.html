@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Creative Studio | Autenticação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="background-canvas">
+        <div class="blob-1"></div>
+        <div class="blob-2"></div>
+    </div>
+
+    <main class="auth-container">
+        <section class="glass-card" id="auth-card">
+            <div class="form-wrapper" id="login-section">
+                <header class="form-header">
+                    <h1 class="brand-title">COLD <span>STUDIO</span></h1>
+                    <p class="form-subtitle">Bem-vindo de volta. Acesse sua conta.</p>
+                </header>
+
+                <form id="login-form" novalidate>
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="seu@email.com" autocomplete="email">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="login-password">Senha</label>
+                        <input type="password" id="login-password" placeholder="••••••••">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="login-btn">
+                        <span class="btn-text">Entrar</span>
+                        <div class="spinner"></div>
+                    </button>
+                </form>
+
+                <footer class="form-footer">
+                    <p>Não tem uma conta? <button class="link-btn" id="go-to-register">Cadastre-se</button></p>
+                </footer>
+            </div>
+
+            <div class="form-wrapper hidden" id="register-section">
+                <header class="form-header">
+                    <h1 class="brand-title">COLD <span>STUDIO</span></h1>
+                    <p class="form-subtitle">Crie sua conta e comece agora.</p>
+                </header>
+
+                <form id="register-form" novalidate>
+                    <div class="input-group">
+                        <label for="reg-name">Nome Completo</label>
+                        <input type="text" id="reg-name" placeholder="Ex: Alex Oliveira">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" placeholder="seu@email.com">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-password">Senha</label>
+                        <input type="password" id="reg-password" placeholder="Mínimo 6 caracteres">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reg-confirm">Confirmar Senha</label>
+                        <input type="password" id="reg-confirm" placeholder="Repita sua senha">
+                        <span class="error-message"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="register-btn">
+                        <span class="btn-text">Criar Conta</span>
+                        <div class="spinner"></div>
+                    </button>
+                </form>
+
+                <footer class="form-footer">
+                    <p>Já possui conta? <button class="link-btn" id="go-to-login">Fazer Login</button></p>
+                </footer>
+            </div>
+
+            <div id="success-overlay" class="overlay hidden">
+                <div class="success-content">
+                    <div class="check-icon">
+                        <svg viewBox="0 0 52 52">
+                            <circle cx="26" cy="26" r="25" fill="none"/>
+                            <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                    </div>
+                    <h2>Sucesso!</h2>
+                    <p>Redirecionando para o dashboard...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/validation.js"></script>
+    <script src="js/ui-controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
