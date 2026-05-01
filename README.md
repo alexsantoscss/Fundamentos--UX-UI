@@ -5,8 +5,7 @@ Este repositório reúne projetos focados na construção de interfaces modernas
 ## 🚀 Objetivo
 Desenvolver domínio em UI/UX, criando experiências visuais que seguem padrões profissionais utilizados por grandes produtos digitais.
 
-## 📦 Projetos incluídos
-- Landing Page Premium
+## 📦 Projetos incluídos (Até o momento)
 - Sistema de Login e Cadastro
 - Formulário Inteligente
 
